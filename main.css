@@ -1,0 +1,91 @@
+/* Основные настройки фона и шрифтов */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed; /* Фон не прокручивается */
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+/* Шапка (Navigation bar area) */
+.border-bottom {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px); /* Эффект матового стекла */
+    border-radius: 15px;
+    padding: 20px !important;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: none !important;
+}
+
+/* Стили заголовков внутри секций */
+h1.display-11 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    text-align: left; /* Текст заголовка лучше смотрится слева */
+}
+
+/* Карточки разделов (About, Projects, Blog) */
+.pricing-header {
+    background: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 40px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.pricing-header:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Список интересов и проектов (улучшение читаемости) */
+.fs-5 {
+    color: #4a5568;
+    text-align: left;
+    white-space: pre-line; /* Сохраняет переносы строк */
+}
+
+/* Футер */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1 !important;
+    border-radius: 20px 20px 0 0;
+    padding: 50px 30px !important;
+    margin-top: 80px;
+}
+
+footer h5 {
+    color: #3498db;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: #bdc3c7 !important;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .pricing-header {
+        padding: 20px !important;
+        margin: 15px;
+    }
+    h1.display-11 {
+        font-size: 1.8rem;
+    }
+}
